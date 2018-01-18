@@ -9,7 +9,7 @@ class TadpolesController < ApplicationController
     else
       render :show
     end
-      
+
   end
 
   def index
