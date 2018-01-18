@@ -11,7 +11,7 @@ class TadpolesController < ApplicationController
     #redirects to the new frog's show page
     redirect_to frog_path(@frog)
   end
-  
+
   def index
     @tadpoles = Tadpole.all
   end
