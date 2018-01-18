@@ -8,7 +8,10 @@ Rails.application.routes.draw do
   get '/frogs/:id/destroy', to: 'frogs#destroy'
   get '/tadpoles/:id/destroy', to: 'tadpoles#destroy'
 
+  # When the as: 'metamorphose' part was NOT here, the from would post to #show, not as this custom route, causing an error
   post '/tadpoles/:id/metamorphose', to: 'tadpoles#metamorphose', as: 'metamorphose'
+
+
   # resources
   resources :ponds
 
