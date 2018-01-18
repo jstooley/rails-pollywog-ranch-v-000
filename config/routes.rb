@@ -12,7 +12,7 @@ post '/tadpoles/:id/metamorphose', to: 'tadpoles#metamorphose', as: 'metamorphos
   # resources
   resources :ponds
 
-  resources :tadpoles, :only => [:index, :show, :edit, :update, :destroy, :metamorphosize, :create]
+  resources :tadpoles, :only => [:index, :show, :edit, :update, :destroy, :metamorphose, :create]
 
   # nested resources
   resources :frogs do
